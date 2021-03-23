@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('#itemslider').carousel({ interval: 3000 });
     
-    $('.carousel-showmanymoveone .item').each(function(){
+    $('.carousel-slider .item').each(function(){
     var itemToClone = $(this);
     
     for (var i=1;i<6;i++) {
