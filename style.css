@@ -35,9 +35,10 @@ header img{
 /* flip images */
 
 img{
+  top:8px;
   width: 255px;
   height: 350px;
-  transition: transform .3s;
+  transition: transform .2s;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -98,6 +99,7 @@ img{
     }
 #content-box {
   background-color: #e09c87;
+  border: black 5px solid;
 }
 #itemslider h4{
     font-family: 'Josefin Sans', sans-serif;
@@ -112,6 +114,13 @@ img{
     font-size: 14px;
     margin: 3px auto 2px;
     color:#b20c0c
+  }
+  #itemslider h6{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 3px auto 2px;
+    color:#6e3131
   }
   
 .badge {
