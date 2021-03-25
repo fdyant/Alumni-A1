@@ -48,6 +48,25 @@ img{
   opacity: 1;
   transform: rotateY(0deg);
 }
+/* text animation */
+
+.div {
+  width: 100%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+.animation, .animation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animation span { display: inline-block }
+
+.lesnake span { animation: leSnake 1.5s ease-in-out; animation-iteration-count: infinite }
+@keyframes leSnake {
+  from, to { transform: translateY(0px) }
+  50% { transform: translateY(30px) }
+}
 
 #slider-text{
     display: block;
@@ -59,17 +78,16 @@ img{
 
 #slider-text h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 50px;
     letter-spacing: 3px;
-    margin: 30px auto;
-    padding-left: 40px;
-    color: rgb(240, 104, 13);
+    text-align: center;
+    color: rgb(240, 13, 13);
 }
 #slider-text h1::after{
     content: "";
     position: absolute;
-    bottom: 35px;
+    bottom: 35px; 
     width: 100%;
     }
 #content-box {
@@ -170,7 +188,11 @@ img{
     .carousel-slider .carousel-inner .cloneditem-1 {
       display: block;
     }
+    #slider-text h1 {
+      font-size: 25px;
+    }
   }
+
   @media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
     .carousel-slider .carousel-inner > .item.active.right,
     .carousel-slider .carousel-inner > .item.next {
@@ -241,30 +263,4 @@ img{
     margin-top:50px;
 }
 
-/* text animation */
-
-.div {
-  width: 100%;
-  position: absolute;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-h1 {
-  letter-spacing: -4px;
-  font-weight: 900;
-  text-align: center;
-}
-
-.animation, .animation span {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.animation span { display: inline-block }
-
-.lesnake span { animation: leSnake 1.5s ease-in-out; animation-iteration-count: infinite }
-@keyframes leSnake {
-  from, to { transform: translateY(0px) }
-  50% { transform: translateY(30px) }
-}
 
